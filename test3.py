@@ -42,7 +42,7 @@ def courses(driver):
 		print (option.get_attribute('value'),option.text)
 
 def main():
-	driver=webdriver.PhantomJS()
+	driver=webdriver.Firefox()
 	driver.get('http://www2.monmouth.edu/muwebadv/wa3/search/SearchClassesV2.aspx')
 
 	if len(sys.argv) == 2:
